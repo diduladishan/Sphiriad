@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style2.css" />
+
+    <!-- Emailjs sdk -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
 
   <body>
@@ -249,7 +255,7 @@
               <div class="tpcontact">
                 <h4 class="tp-contact-big-title">Let’s Talk...</h4>
                 <div class="tpcontact__form tpcontact__form-3">
-                  <form id="contact-form" action="assets/mail.php">
+                  <form id="contact-form" method="post">
                     <input
                       name="name"
                       type="text"
@@ -264,10 +270,10 @@
                       name="message"
                       placeholder="Enter your Massage"
                     ></textarea>
+                    <button type="submit" class="tp-btn-yellow">
+                      Send Massage
+                    </button>
                   </form>
-                  <button type="submit" class="tp-btn-yellow">
-                    Send Massage
-                  </button>
                 </div>
                 <p class="ajax-response"></p>
               </div>
@@ -429,6 +435,7 @@
     </button>
 
     <!-- JS here -->
+    <script src="assets/js/contact-email.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
