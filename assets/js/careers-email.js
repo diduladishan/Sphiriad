@@ -9,6 +9,7 @@ document
     emailjs.sendForm('service_snw1g78', 'template_4ksm0l9', this).then(
       function () {
         console.log('SUCCESS!');
+        alert('Your message has been sent. We will get back to you shortly.');
       },
       function (error) {
         console.log('FAILED...', error);
