@@ -42,6 +42,7 @@
 /*  01. theme defult css start
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet');
+@import url('https://fonts.cdnfonts.com/css/varino');
 
 :root {
   /**
@@ -68,7 +69,7 @@
   --tp-text-p: #8A90A2;
   --tp-theme-1: #12CBC4;
   --tp-theme-2: #58B19F;
-  --tp-theme-primary: #FFDC60;
+  --tp-theme-primary: #29FFF4;
   --tp-theme-secondary: #57c9da;
   --tp-border-1: #E8ECF2;
   --tp-border-2: #4E4E59;
@@ -498,7 +499,7 @@ input[type=color] {
 .tp-btn::before,
 .tp-btn::after {
   content: "";
-  background: #FFDC60;
+  background: #29FFF4;
   height: 50%;
   width: 0;
   position: absolute;
@@ -644,7 +645,7 @@ input[type=color] {
 .tp-btn-sm-sky::before,
 .tp-btn-sm-sky::after {
   content: "";
-  background: #FFDC60;
+  background: #29FFF4;
   height: 50%;
   width: 0;
   position: absolute;
@@ -717,7 +718,7 @@ input[type=color] {
 .tp-btn-sky::before,
 .tp-btn-sky::after {
   content: "";
-  background: #FFDC60;
+  background: #29FFF4;
   height: 50%;
   width: 0;
   position: absolute;
@@ -867,7 +868,7 @@ input[type=color] {
 .tp-btn-sm::before,
 .tp-btn-sm::after {
   content: "";
-  background: #FFDC60;
+  background: #29FFF4;
   height: 50%;
   width: 0;
   position: absolute;
@@ -2072,7 +2073,7 @@ input[type=color] {
   content: "";
   height: 2px;
   width: 60%;
-  background-color: #A8ABFF;
+  background-color: #29FFF4;
   transition: 0.3s;
 }
 
@@ -2090,7 +2091,7 @@ input[type=color] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #A8ABFF;
+  background-color: #29FFF4;
   transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
   transform-origin: bottom center;
   transform: skewY(9.3deg) scaleY(0);
@@ -2100,7 +2101,7 @@ input[type=color] {
 .corporate-btn-2:hover:before {
   transform-origin: bottom center;
   transform: skewY(9.3deg) scaleY(2);
-  background-color: #A8ABFF;
+  background-color: #29FFF4;
 }
 
 .corporate-btn-2 i {
@@ -2108,7 +2109,7 @@ input[type=color] {
 }
 
 .corporate-btn-2:hover {
-  border-color: #A8ABFF;
+  border-color: #29FFF4;
 }
 
 .corporate-btn-2:hover span {
@@ -2694,6 +2695,21 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .black-bg {
   background: var(--tp-common-black);
+}
+
+.black-bgs {
+  background-image: url("../img/header/backheader.png");
+  /* The image used */
+  /* background-color: #cccccc; */
+  /* Used if the image is unavailable */
+
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
 .black-bg-2 {
@@ -3384,9 +3400,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 57px;
   line-height: 57px;
   text-align: center;
-  background-color: #fff;
+  background-color: #1DBEAB;
   border-radius: 10px;
-  box-shadow: 0px -2px 12px #EBE9F3;
+  /* box-shadow: 0px -2px 12px #EBE9F3; */
 }
 
 .tp-shadow-transparent button {
@@ -3873,7 +3889,18 @@ only screen and (min-width: 1601px) and (max-width: 1800px) {
   width: 690px;
   height: 100vh;
   box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("../img/header/leftbar.png");
+  /* The image used */
+  /* background-color: #cccccc; */
+  /* Used if the image is unavailable */
+
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
   z-index: 9999;
   transition: 1s;
   padding-right: 120px;
@@ -6221,7 +6248,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tp-sv-box:before {
   content: "";
-  background-image: linear-gradient(-90deg, #5956E9 0%, #FFDC60 100%);
+  background-image: linear-gradient(-90deg, #5956E9 0%, #29FFF4 100%);
   opacity: 0.3;
   height: 27px;
   width: 84%;
@@ -8138,6 +8165,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
   display: inline-block;
 }
 
+.tp-project-tab-button {
+  background-color: transparent;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
 .tp-project-tab-button button {
   font-size: 15px;
   font-weight: 500;
@@ -8145,6 +8178,69 @@ only screen and (min-width: 768px) and (max-width: 991px),
   position: relative;
   margin: 10px;
   transition: background-position 275ms ease;
+}
+.headerBarButtonIcon {
+  background-color: #fff;
+  padding: 25px;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.headerBarButtonIcon:hover {
+  background-color: #ffffff00;
+  color: #1DBDAB;
+
+  font-weight: 700;
+  border: 1px solid #1dbdaa00;
+  
+
+}
+.headerBarButtonIcon:hover img{
+ 
+transform: translateY(-5px);
+}
+
+.headerBarButton {
+  background-color: #1DBDAB;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.headerBarButton:hover {
+  background-color: #fff;
+  padding: 15px 35px;
+  color: #1DBDAB;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #1DBDAB;
+
+}
+
+.headerBarButtons {
+  background-color: #1DBDAB;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  height: 60%;
+}
+
+.headerBarButtons:hover {
+  background-color: #fff;
+
+  color: #1DBDAB;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #1DBDAB;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8175,21 +8271,21 @@ only screen and (min-width: 768px) and (max-width: 991px),
   box-shadow: 0px 15px 30px rgba(57, 81, 105, 0.05);
   background-color: var(--tp-common-white);
   color: #fff;
-  
+
 }
 
 .tp-project-tab-button button.active:before {
   opacity: 1;
   visibility: visible;
   background-color: #1DB3AB;
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .tp-project-tab-button button:hover {
   color: #fff;
   background-color: #1DB3AB;
-    border-radius: 15px;
-    
+  border-radius: 15px;
+
 }
 
 .tp-project-tab-button button:before {
@@ -8473,17 +8569,15 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .tp-project-item-four::after {
+  padding: 40px 45px;
   position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(41, 41, 48, 0.32);
+  bottom: 0;
+  left: -200px;
   opacity: 0;
-  border-radius: 20px;
-  transition: 0.3s;
-  pointer-events: none;
+  visibility: hidden;
+  background-color: #24B3AD;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
 .tp-project-item-four__img {
@@ -8566,7 +8660,68 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   transition: 0.3s;
   z-index: 5;
 }
+.teamImagesRes{
+  border-radius: 50px;
 
+}
+.teamImagesRes:hover {
+  border-radius: 50px;
+  transform: scale(1.01);
+}
+.image-container {
+  position: relative;
+border-radius: 50px;
+  /* Adjust the width as needed */
+  
+  /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  
+  transition: transform 0.3s ease;
+  /* Transition effect duration and easing */
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+  border-radius: 20px;
+  /* Adjust the scale factor to your preference */
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  /* Transition effect for border color */
+  box-sizing: border-box;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00c8c52a;
+  /* Adjust the overlay color and opacity */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Transition effect for opacity */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-container:hover::before {
+  border-color: #ff000000;
+  /* Change to your desired border color */
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-project-item-four__info-sm {
     padding: 19px 23px;
@@ -8611,10 +8766,12 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 .tp-project-item-four:hover::after {
   opacity: 1;
 }
-.tp-project-item-four:hover .tp-project-item-four__img{
-  
+
+.tp-project-item-four:hover .tp-project-item-four__img {
+
   border: 2px solid #1DB3AB;
 }
+
 .tp-project-item-four:hover .tp-project-item-four__img img {
   transform: scale(1.1);
   border: 2px solid #1DB3AB;
@@ -10010,7 +10167,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-testimonial-slider-section .swiper-slide.swiper-slide-active {
-  border: 1px solid #FFDC60;
+  border: 1px solid #29FFF4;
   border-radius: 20px;
 }
 
@@ -10771,7 +10928,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tp-common-blue);
+  background-color: #384140;
   border-radius: 10px;
   opacity: 0;
   visibility: hidden;
@@ -10814,7 +10971,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tpteam__content i {
   font-size: 15px;
-  color: var(--tp-common-black);
+  color: #fff;
   padding: 0px 15px;
   transition: 0.3s;
 }
@@ -10844,7 +11001,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-team-sm-title {
-  color: var(--tp-common-black);
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
   transition: 0.3s;
@@ -10855,7 +11012,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-team-sm-subtitle {
-  color: var(--tp-common-black);
+  color: #fff;
   font-size: 12px;
   font-weight: 500;
   transition: 0.3s;
@@ -11767,7 +11924,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .product-rating a {
-  color: #FFDC60;
+  color: #29FFF4;
 }
 
 .product-dprice {
@@ -11876,7 +12033,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .product-rating a {
   font-size: 16px;
-  color: #FFDC60;
+  color: #29FFF4;
 }
 
 .product-dinfo {
@@ -11987,7 +12144,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .user-rating ul li {
   display: inline-block;
-  color: #FFDC60;
+  color: #29FFF4;
 }
 
 .comments-text span,
@@ -12009,7 +12166,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .comment-rating ul li {
   display: inline-block;
-  color: #FFDC60;
+  color: #29FFF4;
 }
 
 .comment-input textarea {
@@ -12323,11 +12480,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   }
 }
 
+
 @media (max-width: 767px) {
   .corporate-plr {
     padding-left: 0;
     padding-right: 0;
     padding-top: 20px;
+
   }
 }
 
@@ -12352,7 +12511,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   padding: 45px 55px;
   padding-right: 0;
   border-right: 1px solid #3A3A42;
-  background-color: var(--tp-common-black);
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -12441,7 +12600,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .corporate-header__left-menu>nav>ul>li:hover>a {
-  color: var(--tp-common-white);
+  color: var(--tp-common-pink);
 }
 
 .corporate-header__left-menu>nav>ul>li:hover.left-menu-effect a::after {
@@ -12465,6 +12624,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   line-height: 64px;
   letter-spacing: -0.02em;
   color: var(--tp-common-white);
+
 }
 
 .corporate-header__bar button {
@@ -12487,11 +12647,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .corporate-hero-title {
   font-weight: 700;
-  font-size: 125px;
+  font-size: 110px;
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--tp-common-black);
   padding-bottom: 20px;
+  font-family: 'Varino', sans-serif;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -12588,13 +12749,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .corporate-hero__play-btn a:hover {
-  background-color: #A8ABFF;
+  background-color: #29FFF4;
   color: var(--tp-common-black);
-  border-color: #A8ABFF;
+  border-color: #29FFF4;
 }
 
 .corporate-hero__play-btn a:hover::after {
-  border-color: #A8ABFF;
+  border-color: #29FFF4;
 }
 
 .corporate-hero__play-btn a::after {
@@ -12606,7 +12767,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   content: "";
   display: inline-block;
   border-radius: 200px;
-  border: 2px solid #A8ABFF;
+  border: 2px solid #29FFF4;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
   border-left: 2px solid white;
@@ -12948,7 +13109,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   left: -200px;
   opacity: 0;
   visibility: hidden;
-  background-color: var(--tp-common-white);
+  background-color: #24B3AD;
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -12970,7 +13131,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   font-size: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #8A90A2;
+  color: #fff;
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -12982,15 +13143,20 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   }
 }
 
-.corporate-project__title {
+.corporate-project__title  {
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.02em;
-  color: #292930;
+  color: #fff;
 }
-
+.hel {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
 .corporate-project__title:hover {
-  color: var(--tp-common-pink);
+  color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -13066,7 +13232,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .corporate-testi__rating span {
   font-weight: 900;
   font-size: 12px;
-  color: #FFDC60;
+  color: #29FFF4;
 }
 
 .corporate-testi__rating span.author-position {

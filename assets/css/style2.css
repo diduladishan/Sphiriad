@@ -1,0 +1,73 @@
+.image-containers {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-navigation {
+  border: 2px solid #1fbfb7;
+}
+
+.quote-icon {
+  color: #1fbfb7;
+}
+
+.ac-chose-bg {
+  border: solid #1fbfb7;
+}
+
+.tp-service-item {
+  border: 1px solid #1fbfb7;
+}
+
+.justifyy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='cyan' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='cyan' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel .carousel-indicators li {
+  background-color: white;
+}
+.carousel .carousel-indicators li.active {
+  background-color: cyan;
+}
+
+.carousel {
+  border-radius: 18px;
+  border: 3px solid #1fbfb7;
+}
+
+.img-radius {
+  border-radius: 15px;
+}
+
+.service-image {
+  border-radius: 18px;
+  border: 3px solid #1fbfb7;
+}
+
+.contact-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-border {
+  border: 3px solid #1fbfb7;
+}
