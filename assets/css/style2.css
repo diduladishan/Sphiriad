@@ -71,3 +71,16 @@
 .contact-border {
   border: 3px solid #1fbfb7;
 }
+
+.all-about-section {
+  margin-top: 50px;
+}
+
+.cv-upload {
+  background-color: transparent !important;
+  padding: 3px !important;
+}
+
+#message-section {
+  margin-bottom: 0;
+}

@@ -231,8 +231,8 @@
                   <h5 class="jb-subtitle">Ongoing</h5>
                 </div>
                 <div class="jobdetails__title">
-                  <h4 class="job-title pb-10">Web Development</h4>
-                  <span>Full-Stack Developer</span>
+                  <h4 class="job-title pb-10">Front-End Developer</h4>
+                  <span>Web Development</span>
                 </div>
                 <div class="jobdetails__paragraph">
                   <p class="pb-20">
@@ -292,9 +292,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="jobdetails__img">
+
+                <!-- <div class="jobdetails__img">
                   <img src="./assets/img/team/real/mock-img.png" alt="" />
-                </div>
+                </div> -->
+
+                <!-- Responsibilities setion starts here -->
+                <!--
                 <div class="jobdetails__title">
                   <h4 class="job-title pb-20">Your Responsibilities :</h4>
                 </div>
@@ -352,23 +356,30 @@
                       and performing data analysis.
                     </li>
                   </ul>
-                </div>
-                <div class="jobdetails__title">
-                  <h4 class="job-title pb-15">
-                    All About Sphiria Digital Studio
-                  </h4>
-                </div>
-                <div class="jobdetails__paragraph">
-                  <p>
-                    Sphiria Digital Studio - Digital Marketing and IT Services.
-                    As a leading IT Services and Digital Marketing agency, we
-                    guided hundreds of small, medium scale organizations and
-                    cooperate level businesses to achieve their local and
-                    international goals.
-                  </p>
-                </div>
+                </div> -->
+
+                <!-- Responsibilities setion ends here -->
+                <!-- All about section starts-->
+                <!--  <div class="all-about-section">
+                  <div class="jobdetails__title">
+                    <h4 class="job-title pb-15">
+                      All About Sphiria Digital Studio
+                    </h4>
+                  </div>
+                  <div class="jobdetails__paragraph">
+                    <p>
+                      Sphiria Digital Studio - Digital Marketing and IT
+                      Services. As a leading IT Services and Digital Marketing
+                      agency, we guided hundreds of small, medium scale
+                      organizations and cooperate level businesses to achieve
+                      their local and international goals.
+                    </p>
+                  </div>
+                </div> -->
+                <!-- All about section ends-->
               </div>
             </div>
+
             <div class="col-xl-6 col-lg-6">
               <div class="tpcontact">
                 <div class="tpcontact__form tpcontact__form-2">
@@ -389,14 +400,27 @@
                       placeholder="Enter your Mail"
                     />
                     <textarea
+                      id="message-section"
                       name="message"
                       placeholder="Enter your Message*"
                     ></textarea>
+                    <div class="cv-section">
+                      <label for="cv">Upload CV:</label>
+                      <input
+                        class="cv-upload"
+                        type="file"
+                        id="cv"
+                        name="cv"
+                        accept=".pdf, .doc, .docx"
+                        required
+                      />
+                    </div>
                     <button type="submit" class="tp-btn-yellow w-100">
                       Apply Now
                     </button>
                   </form>
                 </div>
+
                 <p class="ajax-response"></p>
               </div>
             </div>
