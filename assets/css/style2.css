@@ -14,7 +14,7 @@
 }
 
 .ac-chose-bg {
-  border: solid #1db3ab;
+  border: 2px solid #1db3ab;
 }
 
 .tp-service-item {
@@ -48,19 +48,19 @@
   background-color: cyan;
 }
 
-.carousel {
+/*.carousel {
   border-radius: 18px;
   border: 3px solid #1db3ab;
-}
+} */
 
 .img-radius {
   border-radius: 15px;
 }
 
-.service-image {
+/* .service-image {
   border-radius: 18px;
   border: 3px solid #1db3ab;
-}
+} */
 
 .contact-img {
   display: flex;
@@ -69,7 +69,7 @@
 }
 
 .contact-border {
-  border: 3px solid #1db3ab;
+  border: 2px solid #1db3ab;
 }
 
 .all-about-section {
@@ -78,7 +78,7 @@
 
 .cv-upload {
   background-color: transparent !important;
-  padding: 3px !important;
+  padding: 2px !important;
 }
 
 #message-section {
